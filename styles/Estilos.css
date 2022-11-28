@@ -9,6 +9,37 @@ body {
     font-family: Lato;
 }
 
+.attributes p {
+    margin-left: 5px;
+}
+
+.contenedor-barra {
+    margin: auto;
+    width: 80%;
+    height: 10px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+}
+
+#progreso-español {
+    border-radius: 10px;
+    background-color:bisque;
+    width: 100%;
+    height: 10px;
+}
+
+#progreso-ingles {
+    border-radius: 10px;
+    background-color:bisque;
+    width: 80%;
+    height: 10px;
+}
+
+.contenedor-porcentajes {
+    display: flex;
+    justify-content: center;
+}
+
 .padre {
     display: flex;
     flex-direction: row;
@@ -17,7 +48,7 @@ body {
 }
 
 .padre .left {
-    width:40%;
+    width: 20%;
     background-color: rgb(83, 79, 93);
     /* box-shadow: 0px 2px 4px 2px #232323; */
     border-bottom-left-radius: 1em;
@@ -25,8 +56,45 @@ body {
     color: #fff;
 }
 
+
 .padre .left .descripcion {
     padding: 1em;
+}
+
+#contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 375px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+    margin: 5px 5px;
+    padding: 5px;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100px;
+    display: block;
+    margin: 2px auto;
+    border-radius: 50%;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+.card p {
+    margin: 5px 8px;
+    
 }
 
 .padre .left .attributes h2 {
@@ -34,6 +102,7 @@ body {
 }
 
 .padre .right {
+    width: 80%;
     background-color: #fff;
     padding: 10px;
     border-top-right-radius: 1em;
@@ -42,9 +111,50 @@ body {
 }
 
 .left img {
-    width: 4em;
+    width: 170px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    transition: all 0.2s;
 }
 
+.left img:hover {
+    transform: scale(1.1);
+}
+
+#trabajos h2 {
+    background-color: aliceblue;
+}
+
+.right p {
+    text-align: justify;
+}
+
+#progreso-phyton{
+    border-radius: 10px;
+    background-color:bisque;
+    width: 50%;
+    height: 10px;
+}
+#progreso-html{
+    border-radius:  10px; ;
+    background-color: bisque;
+    width: 75% ;
+    height: 10px;
+}
+#progreso-office{
+    border-radius:  10px; ;
+    background-color: bisque;
+    width: 100% ;
+    height: 10px;
+}
+#Tablas{
+    text-align: center;
+    border: PowderBlue 10px 10px solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+    
 
 @media (max-width: 700px){
     .padre {
@@ -62,6 +172,18 @@ body {
 
     .padre .right {
         border-bottom-left-radius: 1em;
+        margin: auto;
     }
 
+    .card {
+        margin: 10px auto;
+    }
+  .table {
+    border: auto;
+    margin: auto;
+  }
+  #Tablas{
+
+  }
+ 
 }
